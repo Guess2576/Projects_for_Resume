@@ -1,0 +1,61 @@
+.about-page {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #CC8A00;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .about-page h1 {
+
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-image {
+    width: 35%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .about-info {
+    text-align: center;
+
+  }
+  
+  .about-info p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-slide-in {
+    animation: fadeSlideIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}

@@ -1,0 +1,65 @@
+/* --- Animation Keyframes --- */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.class-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* --- Page Entrance Animation --- */
+.class-ratings-page {
+  background-color: #000000;
+  color: #CC8A00;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeSlideIn 0.8s ease forwards;
+}
+
+/* --- Optional: Add staggered effect for each list item --- */
+.class-item {
+  cursor: pointer;
+  background-color: #006341;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #006341;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease;
+  animation: fadeSlideIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.class-item a{
+  color:#000000;
+  font-weight: bold;
+}
+
+.class-item:hover {
+  color: #006341
+}
+.class-item a:hover {
+  color: #CC8A00;
+}
+
+/* Stagger using nth-child (adds delay per item) */
+.class-item:nth-child(1) { animation-delay: 0.2s; }
+.class-item:nth-child(2) { animation-delay: 0.4s; }
+.class-item:nth-child(3) { animation-delay: 0.6s; }
+.class-item:nth-child(4) { animation-delay: 0.8s; }
+/* Add more as needed */
