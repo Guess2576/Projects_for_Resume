@@ -1,0 +1,5 @@
+This project handles number conversions using C. The following conversions are performed:
+        Convert a decimal number to bianry
+        Convert a binary array to a decimal number
+        Convert a decimal number to hexadecimal
+        Convert a hexadecimal array to a decimal number

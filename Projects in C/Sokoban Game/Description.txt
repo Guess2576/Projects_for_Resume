@@ -1,0 +1,2 @@
+This program creates the game of Sokoban using C.
+I would like to note that portions of the code were granted to us by the professors in a template format. We were tasked with filling in the gaps to create a working game of Sokoban.

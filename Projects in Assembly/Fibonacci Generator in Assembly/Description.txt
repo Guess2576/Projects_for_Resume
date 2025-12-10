@@ -1,0 +1,6 @@
+This project does the following:
+    Prompts the user to enter a number N from 0 to 40.
+        If invalid input is detected, an error message prints and exits.
+        If valid input, it generates and prints the first N numbers in the fibonacci sequence.
+
+    The fibonacci numbers are iteratively computed using the registers. 

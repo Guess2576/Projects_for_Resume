@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact | Your Website</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="name-section">
+    <span class="website-name">Connor Guess Photography</span>
+    </div>
+    <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+  </div>
+  </div>
+
+<!--Form creation learned from the following links. https://www.freecodecamp.org/news/text-box-in-html-the-input-field-html-tag/#:~:text=How%20to%20Create%20an%20HTML,can%20type%20any%20text%20input.
+https://formsubmit.co/            https://www.geeksforgeeks.org/how-to-set-the-size-of-textarea-in-html/-->
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <div class="form-group">
+        <label for="email">Your Email Address</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</body>
+</html>

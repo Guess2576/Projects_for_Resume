@@ -1,0 +1,15 @@
+This lab demonstrates the following functions in python: 
+
+  Registers new users
+
+  Validates passwords
+
+  Checks for duplicate emails
+
+  Allows users to sign in
+
+  Shows error messages using Flask’s flash system
+
+  Redirects authenticated users to a secret page
+
+  Stores all user data in a SQLite database

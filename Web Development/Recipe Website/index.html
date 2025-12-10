@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PalateTuner.com</title>
+    </head>
+    <body>
+        <div class="Frame">
+        <script defer src="JSmain.js"></script>
+        <header>
+            <p>PalateTuner</p>
+        </header>
+        <main>
+            <p>Menu</p>
+<!--             This is the search bar -->
+            <div class="SearchBar">
+                <input type="text" id="searchInput" placeholder="Enter your search query" oninput="directSearch(this.value)">
+            </div> <br>
+        
+            
+            <form>
+                <div class="multiselect2">
+                    <div class="selectRadio" onclick="showRadiobuttons()">
+                        <select>
+                            <option>Select Meal Type</option>
+                        </select>
+                        <div class="overSelect2"></div>
+                    </div>
+<!--                     This is all of the radiobuttons on the main page -->
+                    <div id="radioButtons">
+                        <label for="one">
+                            <input type="radio" id="radiobutton1" name="test" value="Breakfast" onclick="WhatTypeOfDish(value)">Breakfeast
+                        </label>
+                        <label for="two">
+                            <input type="radio" id="radiobutton2" name="test" value="Lunch" onclick="WhatTypeOfDish(value)">Lunch
+                        </label>
+                        <label for= "three">
+                            <input type="radio" id="radiobutton3" name="test" value="Dinner" onclick="WhatTypeOfDish(value)">Dinner
+                        </label>
+                        <label for="four">
+                            <input type="radio" id="radiobutton4" name="test" value="All" onclick="WhatTypeOfDish(value)">All Dishes
+                        </label>
+                    </div>
+                </div>
+            </form> <br>
+            
+            <form>
+                <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option>Select Meal Preferences</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+<!--                     This is all of the checkboxes on the main page -->
+                    <div id="checkboxes">
+                        <label for="one">
+                            <input type="checkbox" id="checkbox1" value="Gluten-Free" onclick="updateSelectedValues(this.value)">Gluten-Free
+                        </label>
+                        <label for="two">
+                            <input type="checkbox" id="checkbox2" value="Vegetarian" onclick="updateSelectedValues(this.value)">Vegetarian
+                        </label>
+                        <label for= "three">
+                            <input type="checkbox" id="checkbox3" value="Keto" onclick="updateSelectedValues(this.value)">Keto
+                        </label>
+                        <label for= "four">
+                            <input type="checkbox" id="checkbox4" value="Vegan" onclick="updateSelectedValues(this.value)">Vegan
+                        </label>
+                        <label for= "five">
+                            <input type="checkbox" id="checkbox5" value="Dairy-Free" onclick="updateSelectedValues(this.value)">Dairy-Free
+                        </label>
+                        <label for= "six">
+                            <input type="checkbox" id="checkbox6" value="Nut-Free" onclick="updateSelectedValues(this.value)">Nut-Free
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+<!--             This is all of the dish items/buttons on the main page -->
+            <p id="test"></p>
+            <div id="ItemsContainer">
+                <button id="Pancakes" value="Pancakes" onclick="DishProfilePage(this.value)"><p><span>Pancakes</span></p><img id="D1"  <img src="https://plus.unsplash.com/premium_photo-1672846027109-e2c91500afef?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 1"></button>
+                <button id="ScrambledEggs" value="Scrambled Eggs" onclick="DishProfilePage(this.value)"><p><span>Scrambled Eggs</span></p><img id="D2"  src="https://images.unsplash.com/photo-1593619566002-8bf042dd1cfb?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 2"></button>
+                <button id="Waffles" value="Waffles" onclick="DishProfilePage(value)"><p><span>Waffles</span></p><img id="D3"  src="https://plus.unsplash.com/premium_photo-1664392140212-bad0ee2c2634?auto=format&fit=crop&q=80&w=1930&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 3"></button>
+                <button id="TurkeySandwich" value="Turkey Sandwich" onclick="DishProfilePage(value)"><p><span>Turkey Sandwich</span></p><img id="D4"  src="https://plus.unsplash.com/premium_photo-1664472757995-3260cd26e477?auto=format&fit=crop&q=80&w=1961&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 4"></button>
+                <button id="PepperoniPizza" value="Pepperoni Pizza" onclick="DishProfilePage(value)"><p><span>Pepperoni Pizza</span></p><img id="D5"  src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 5"></button>
+                <button id="CheeseBurger" value="Cheese Burger" onclick="DishProfilePage(value)"><p><span>Cheese Burger</span></p><img id="D6"  src="https://images.unsplash.com/photo-1502998070258-dc1338445ac2?auto=format&fit=crop&q=80&w=1958&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 6"></button>
+                <button id="Steak" value="Steak" onclick="DishProfilePage(value)"><p><span>Steak</span></p><img id="D7"  src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?auto=format&fit=crop&q=80&w=1854&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 7"></button>
+                <button id="TomatoBisqueSoup" value="Tomato Bisque Soup" onclick="DishProfilePage(value)"><p><span>Tomato Bisque Soup</span></p><img id="D8"  src="https://plus.unsplash.com/premium_photo-1669687759693-52ba5f9fa7a8?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 8"></button>
+                <button id="Lasagna" value="Lasagna" onclick="DishProfilePage(value)"><p><span>Lasagna</span></p><img id="D9"  src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 9"></button>
+                <button id="SausageEggCheeseBiscuit" value="Sausage Egg Cheese Biscuit" onclick="DishProfilePage(value)"><p><span>Sausage,Egg, and Cheese Biscuit</span></p><img id="D10"  src="https://media.istockphoto.com/id/95315215/photo/sausage-biscuit-sandwich.jpg?s=1024x1024&w=is&k=20&c=WoualT7VvP75DwC-DpWdlqhhxKj8kb3eHw1HhKCOJTI=" alt="dish 10"></button>
+                <button id="SunnySpinachScramble" value="Sunny Spinach Scramble" onclick="DishProfilePage(value)"><p><span>Sunny Spinach Scramble</span></p><img id="D11" src="https://media.istockphoto.com/id/1310454166/photo/image-of-green-pea-and-spinach-spanish-tortilla-frittata-with-chopped-potato-and-bacon-in-non.jpg?s=2048x2048&w=is&k=20&c=q3XQBpxjNcYt6rejsvMPtsDgeMp0fuuHB_3bqFXc008=" alt="dish 11"></button>
+                <button id="BroccoliCheddarBreakfastMuffins" value="Broccoli Cheddar Breakfast Muffins" onclick="DishProfilePage(value)"><p><span>Broccoli Cheddar Breakfast Muffins</span></p><img id="D12" src="https://media.istockphoto.com/id/992927546/photo/delicious-and-healthy-broccoli-bites-with-cheddar-cheese-egg-and-thyme-close-up-horizontal.jpg?s=2048x2048&w=is&k=20&c=qo7OZ_MxczeGholRdt2IDwlr9qYt9zutkm_t1acwBEc=" alt="dish 12"></button>
+                <button id="KetoSausageandEggCasserole" value="Keto Sausage and Egg Casserole" onclick="DishProfilePage(value)"><p><span>Keto Sausage and Egg Casserole</span></p><img id="D13" src="https://media.istockphoto.com/id/1396734602/photo/crustless-sausage-and-peppers-omelet.jpg?s=2048x2048&w=is&k=20&c=f9cqDOg_-x_Y1TzFvtiJC2ZUtd_K1cMwUJawdZcWI-4=" alt="dish 13"></button>
+                <button id="AvocadoToast" value="Avocado Toast" onclick="DishProfilePage(value)"><p><span>Avocado Toast</span></p><img id="D14" src="https://images.unsplash.com/photo-1632217471220-a661da2ae319?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 14"></button>
+                <button id="OatmealwithAlmondMilk" value="Oatmeal with Almond Milk" onclick="DishProfilePage(value)"><p><span>Oatmeal with Almond Milk</span></p><img id="D15" src="https://images.unsplash.com/photo-1584970922591-5b91e5f927a9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dish 15"></button>
+                <button id="QuinoaSalad" value="Quinoa Salad" onclick="DishProfilePage(value)"><p><span>Quinoa Salad</span></p><img id="D16" src="https://images.unsplash.com/photo-1615865417491-9941019fbc00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 15"></button>
+                <button id="GreekSalad" value="Greek Salad" onclick="DishProfilePage(value)"><p><span>Greek Salad</span></p><img id="D17" src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 17"></button>
+                <button id="CaesarSalad" value="Caesar Salad" onclick="DishProfilePage(value)"><p><span>Caesar Salad</span></p><img id="D18" src="https://images.unsplash.com/photo-1512852939750-1305098529bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish18"></button>
+                <button id="VeganTacos" value="Vegan Tacos" onclick="DishProfilePage(value)"><p><span>Vegan Tacos</span></p><img id="D19" src="https://images.unsplash.com/photo-1588556008426-af415581d44b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 19"></button>
+                <button id="LentilSoup" value="Lentil Soup" onclick="DishProfilePage(value)"><p><span>Lentil Soup</span></p><img id="D20" src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 20"></button>
+                <button id="ChickenQuesadillas" value="Chicken Quesadillas" onclick="DishProfilePage(value)"><p><span>Chicken Quesadillas</span></p><img id="D21" src="https://images.unsplash.com/photo-1617990590988-895fe6cbabda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 21"></button>
+                <button id="BakedSalmonwithLemonandDill" value="Baked Salmon with Lemon and Dill" onclick="DishProfilePage(value)"><p><span>Baked Salmon</span></p><img id="D22" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 22"></button>
+                <button id="MushroomRisotto" value="Mushroom Risotto" onclick="DishProfilePage(value)"><p><span>Mushroom Risotto</span></p><img id="D23" src="https://images.unsplash.com/photo-1609770424775-39ec362f2d94?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 23"></button>
+                <button id="LemonGarlicButterShrimp" value="Lemon Garlic Butter Shrimp" onclick="DishProfilePage(value)"><p><span>Lemon Garlic Butter Shrimp</span></p><img id="D24" src="https://images.unsplash.com/photo-1595117796900-e3bb784ea0db?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 24"></button>
+                <button id="CoconutSaladWraps" value="Coconut Salad Wraps" onclick="DishProfilePage(value)"><p><span>Coconut Salad Wraps</span></p><img id="D25" src="https://images.unsplash.com/photo-1600850056064-a8b380df8395?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 25"></button>
+                <button id="Spaghetti" value="Spaghetti" onclick="DishProfilePage(value)"><p><span>Spaghetti</span></p><img id="D26" src="https://images.unsplash.com/photo-1627286400579-027de47e9e73?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 26"></button>
+                <button id="BeefTaco" value="Beef Taco" onclick="DishProfilePage(value)"><p><span>Beef Taco</span></p><img id="D27" src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?q=80&w=1794&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dish 27"></button>
+            </div>
+            <div id="imageGrid"></div>
+        </main>
+</div>
+    </body>
+</html>
+<!-- Sources -->
+<!-- Some images are sourced from the website https://unsplash.com/. For the sake of college project submission I must state I do not own these images. -->
+<!-- Some images are sourced from the website https://www.istockphoto.com/. For the sake of college project submission I must state I do not own these images. -->

@@ -1,0 +1,1 @@
+This lab was to demonstrate our ability to use the shell to access an API in order to solve a simple math problem all while using a python program to initiate the chain of events.

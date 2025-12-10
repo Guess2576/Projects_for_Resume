@@ -1,0 +1,2 @@
+This lab is a practice of creating databases, edititng them, and performing actions with the data contained within them. The key functions include: adding students and their exam scores to the DB, as well as deleting them.
+The average score for a student can also be calculated in this program. 

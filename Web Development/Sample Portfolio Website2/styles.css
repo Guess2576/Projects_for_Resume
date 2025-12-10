@@ -1,0 +1,162 @@
+
+
+
+/* Some CSS styling provided by chatGPT then altered to fit my preferences. Such as: "How to center the buttons on my navbar while keeping the name on the far left", "How to put text below grid items in a flexbox", "How to change the delay of a hover effect in css". /*
+/* Used the following link for CSS knowledge. Also used the various other sections displayed on the left tab when on the following link. https://www.w3schools.com/htmL/html_css.asp */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white;
+    height: 100vh;
+}
+
+
+    /* Navbar */
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px; /* make navabr taller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-section {
+    display: flex;
+    align-items: center; /* Center buttons */
+    margin-right: auto; /* Push website name to the left*/
+}
+
+.website-name {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; /* get rid of underline on link buttons */
+    padding: 20px; /* Space between link buttons */
+    display: block; /* Keep the buttons together */
+}
+
+.navbar a:hover {
+    background-color: rgb(61, 61, 61); /* Button hover color */
+}
+
+
+    /* Home Page */
+
+.home {
+    background: url('DSC03956.jpg') center;
+    background-size: cover; /* make background image fill the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* fill viewport */
+}
+
+    /* Portfolio Page */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio-item {
+    width: 40%; 
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .portfolio-item img {
+    width: 100%; /* Make sure image fills the tile*/
+  }
+  
+  .caption {
+    text-align: center;
+    color: white;
+    margin-top: 10px; /* Put space between the image and its caption */
+  }
+
+
+    /* Contact Page */
+
+  .contact-form {
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black; 
+}
+
+.contact-form {
+    margin: 0 auto;
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+.form-group {
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 150px; 
+}
+
+button {
+    width: 50%; 
+    padding: 10px;
+    background-color: #383838; 
+    color: white;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #535353; 
+}
+
+
+    /* About Page */
+
+.about {
+    background-color: black;
+    color: white;
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.about .tile {
+    flex: 1; /* Make sure tiles are equally wide */
+}
+
+.about .tile img {
+    width: 100%; /* Make the image fill the tile */
+}
+
+.about .tile .text {
+    text-align: center;
+    max-width: 80%; /* Make sure text doesn't touch borders of tile */
+    margin: 0 auto; /* Center within tile */
+}

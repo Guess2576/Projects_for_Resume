@@ -1,0 +1,1 @@
+This lab was done to demonstrate my ability to construct a sample portfolio website for my hobby of photography. The website was composed using HTML and CSS. 

@@ -1,0 +1,742 @@
+header p {
+    font-size: 36px; 
+}
+
+main p {
+    font-size: 20px;
+}
+.multiselect {
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.multiselect, .multiselect2 {
+    width: 200px;
+    display: inline-block;
+    position: relative;
+}
+
+.selectBox {
+    position: relative;
+}
+  
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+ 
+.selectBox select option {
+    text-align: center;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+  
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    text-align: left;
+}
+  
+#checkboxes label {
+    display: block;
+    padding-top:10px;
+}
+  
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+/*  */
+.multiselect2 {
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.selectRadio {
+    position: relative;
+}
+  
+.selectRadio select {
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.selectRadio select option {
+    text-align: center;
+}
+  
+.overSelect2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#searchBar {
+    width: 40%;
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.SearchBar input {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+  
+#radioButtons {
+    display: none;
+    border: 1px #dadada solid;
+    text-align: left;
+}
+  
+#radioButtons label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+  
+#radioButtons label:hover {
+    background-color: #1e90ff;
+}
+
+#ItemsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#ItemsContainer img {
+    width: auto; 
+    max-height: 200px;
+    border-radius: 10px;
+}
+#ItemsContainer button{
+    width: calc(25% - 10px); 
+    height: 150px;
+    border-radius: 10px;
+    display: none;
+}
+#imageGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+button {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+button img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+#imageGrid button {
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#imageGrid button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#imageGrid button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 40%;
+    text-align: center;
+    margin: 0;
+    color: green;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box; 
+}
+
+
+.Frame {
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    font-family: impact;
+    border-style: groove;
+    border-color: black;
+    background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+body {
+    text-align: center;
+    background-size: fill;
+    background-image: url("https://images.unsplash.com/photo-1641262503099-741a0825b3e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+p span {
+    display: inline-flex;
+    padding: 5px;
+    font-size: 20px;
+}
+#ScoreButton button {
+    position: absolute; 
+    width: 100px;
+    height: 50px;
+    right: 100px;
+    top: 23%;
+    background-color: green;
+    justify-content: center;
+    display: flex; 
+    align-items: center; 
+}
+#ScoreButton button p {
+    text-align: center;
+    color: white;
+    margin: 0; 
+    background-color: green;
+    flex: 1; 
+}
+
+ul#ingredients {
+    text-align: left;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+  
+ol#how2make {
+    text-align: left;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+a:link {
+    color: white;
+}
+a:hover {
+    color: brown;
+}
+a:visited {
+    color: green;
+}
+a:active {
+    color: green;
+}
+@media(max-width: 1024px){
+    .multiselect {
+        width: 200px;
+    }
+      
+    .selectBox {
+        position: relative;
+    }
+      
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #checkboxes {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #checkboxes label {
+        display: block;
+    }
+      
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+    
+    /*  */
+    .multiselect2 {
+        width: 200px;
+    }
+      
+    .selectRadio {
+        position: relative;
+    }
+      
+    .selectRadio select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #radioButtons {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #radioButtons label {
+        display: block;
+    }
+      
+    #radioButtons label:hover {
+        background-color: #1e90ff;
+    }
+    
+    #ItemsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    #ItemsContainer img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    #ItemsContainer button{
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        display: none;
+    }
+    #imageGrid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    button {
+        border: none;
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    button img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    button p{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        color: green;
+    }
+    .Frame {
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 10px;
+        font-family: impact;
+        border-style: groove;
+        border-color: black;
+        background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    body {
+        text-align: center;
+        background-size: fill;
+        background-image: url("https://images.unsplash.com/photo-1641262503099-741a0825b3e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    p span {
+        display: inline-flex;
+        padding: 5px;
+        font-size: 20px;
+        background-color: white;
+        opacity: 50%;
+    }
+    #ScoreButton button {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        right: 100px;
+        top: 23%;
+        background-color: green;
+    }
+    #ScoreButton button p {
+        text-align: center;
+        color:white;
+        position: absolute;
+        top: 19%;
+    }
+  }
+  @media(max-width: 768px){
+    .multiselect {
+        width: 200px;
+    }
+      
+    .selectBox {
+        position: relative;
+    }
+      
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #checkboxes {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #checkboxes label {
+        display: block;
+    }
+      
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+    
+    /*  */
+    .multiselect2 {
+        width: 200px;
+    }
+      
+    .selectRadio {
+        position: relative;
+    }
+      
+    .selectRadio select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #radioButtons {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #radioButtons label {
+        display: block;
+    }
+      
+    #radioButtons label:hover {
+        background-color: #1e90ff;
+    }
+    
+    #ItemsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    #ItemsContainer img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    #ItemsContainer button{
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        display: none;
+    }
+    #imageGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    button {
+        border: none;
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    button img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    button p{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        color: green;
+    }
+    .Frame {
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 10px;
+        font-family: impact;
+        border-style: groove;
+        border-color: black;
+        background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    body {
+        text-align: center;
+        background-size: fill;
+        background-image: url("https://images.unsplash.com/photo-1641262503099-741a0825b3e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    p span {
+        display: inline-flex;
+        padding: 5px;
+        font-size: 20px;
+        background-color: white;
+        opacity: 50%;
+    }
+    #ScoreButton button {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        right: 100px;
+        top: 23%;
+        background-color: green;
+    }
+    #ScoreButton button p {
+        text-align: center;
+        color:white;
+        position: absolute;
+        top: 19%;
+    }
+  }
+  @media (max-width: 480px){
+    .multiselect {
+        width: 200px;
+    }
+      
+    .selectBox {
+        position: relative;
+    }
+      
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #checkboxes {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #checkboxes label {
+        display: block;
+    }
+      
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+    
+    /*  */
+    .multiselect2 {
+        width: 200px;
+    }
+      
+    .selectRadio {
+        position: relative;
+    }
+      
+    .selectRadio select {
+        width: 100%;
+        font-weight: bold;
+    }
+      
+    .overSelect2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+      
+    #radioButtons {
+        display: none;
+        border: 1px #dadada solid;
+    }
+      
+    #radioButtons label {
+        display: block;
+    }
+      
+    #radioButtons label:hover {
+        background-color: #1e90ff;
+    }
+    
+    #ItemsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    #ItemsContainer img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    #ItemsContainer button{
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        display: none;
+    }
+    #imageGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    button {
+        border: none;
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    button img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    button p{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        color: green;
+    }
+    .Frame {
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 10px;
+        font-family: impact;
+        border-style: groove;
+        border-color: black;
+        background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    body {
+        text-align: center;
+        background-size: fill;
+        background-image: url("https://images.unsplash.com/photo-1641262503099-741a0825b3e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    p span {
+        display: inline-flex;
+        padding: 5px;
+        font-size: 20px;
+        background-color: white;
+        opacity: 50%;
+    }
+    #ScoreButton button {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        right: 100px;
+        top: 23%;
+        background-color: green;
+    }
+    #ScoreButton button p {
+        text-align: center;
+        color:white;
+        position: absolute;
+        top: 19%;
+    }
+  }
+/* Sources */
+/* Some images are sourced from the website https://unsplash.com/. For the sake of college project submission I must state I do not own these images. */

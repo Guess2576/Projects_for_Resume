@@ -1,0 +1,4 @@
+This project demonstrates the ability to prompt a user for 2 integers and then perform 3 calculations using integers A and B.
+Calculation 1: A x 5 =
+Calculation 2: (A +B) - (A / B)
+Calculation 3: (A – B) + (A × B)
